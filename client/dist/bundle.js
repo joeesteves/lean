@@ -22767,6 +22767,10 @@ var _perfilContainer = __webpack_require__(245);
 
 var _perfilContainer2 = _interopRequireDefault(_perfilContainer);
 
+var _teamContainer = __webpack_require__(249);
+
+var _teamContainer2 = _interopRequireDefault(_teamContainer);
+
 var _menuContainer = __webpack_require__(248);
 
 var _menuContainer2 = _interopRequireDefault(_menuContainer);
@@ -22816,7 +22820,8 @@ var MainContainer = function (_React$Component) {
           _react2.default.createElement('hr', null),
           _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _homeContainer2.default }),
           _react2.default.createElement(_reactRouterDom.Route, { path: '/compras', component: _buyContainer2.default }),
-          _react2.default.createElement(_reactRouterDom.Route, { path: '/perfil', component: _perfilContainer2.default })
+          _react2.default.createElement(_reactRouterDom.Route, { path: '/perfil', component: _perfilContainer2.default }),
+          _react2.default.createElement(_reactRouterDom.Route, { path: '/team', component: _teamContainer2.default })
         )
       );
     }
@@ -26157,7 +26162,29 @@ var _react2 = _interopRequireDefault(_react);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = function () {
-  return _react2.default.createElement('h1', null);
+  return _react2.default.createElement(
+    "div",
+    { className: "jumbotron" },
+    _react2.default.createElement(
+      "h1",
+      null,
+      "Bienvenido a LeanAgro "
+    ),
+    _react2.default.createElement(
+      "h3",
+      null,
+      "La plataforma para comprar como los grandes"
+    ),
+    _react2.default.createElement(
+      "p",
+      null,
+      _react2.default.createElement(
+        "a",
+        { className: "btn btn-primary btn-lg", href: "#", role: "button" },
+        "Conocer m\xE1s"
+      )
+    )
+  );
 };
 
 /***/ }),
@@ -26179,9 +26206,18 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 exports.default = function () {
   return _react2.default.createElement(
-    'h1',
-    null,
-    ' PERFIL '
+    "div",
+    { className: "jumbotron" },
+    _react2.default.createElement(
+      "h1",
+      null,
+      "Configuraci\xF3n del perfil "
+    ),
+    _react2.default.createElement(
+      "h3",
+      null,
+      "Estamos trabajando para que la plataforma este lista en los pr\xF3xmimos meses"
+    )
   );
 };
 
@@ -26276,7 +26312,51 @@ exports.default = function (props) {
     { className: 'nav nav-pills' },
     _react2.default.createElement(_menuItem2.default, { currentClass: props.isActive('home'), activateLink: props.activateLink.bind(undefined, 'home'), goTo: '/', iconClass: 'fa fa-home fa-4x' }),
     _react2.default.createElement(_menuItem2.default, { currentClass: props.isActive('compras'), activateLink: props.activateLink.bind(undefined, 'compras'), goTo: '/compras', iconClass: 'fa fa-shopping-cart fa-4x' }),
-    _react2.default.createElement(_menuItem2.default, { currentClass: props.isActive('perfil'), activateLink: props.activateLink.bind(undefined, 'perfil'), goTo: '/perfil', iconClass: 'fa fa-user fa-4x' })
+    _react2.default.createElement(_menuItem2.default, { currentClass: props.isActive('perfil'), activateLink: props.activateLink.bind(undefined, 'perfil'), goTo: '/perfil', iconClass: 'fa fa-user fa-4x' }),
+    _react2.default.createElement(_menuItem2.default, { currentClass: props.isActive('team'), activateLink: props.activateLink.bind(undefined, 'team'), goTo: '/team', iconClass: 'fa fa-users fa-4x' })
+  );
+};
+
+/***/ }),
+/* 249 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(32);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = function () {
+  return _react2.default.createElement(
+    "div",
+    { className: "jumbotron" },
+    _react2.default.createElement(
+      "h1",
+      null,
+      "Comenza a formar tus equipos de compra"
+    ),
+    _react2.default.createElement(
+      "h3",
+      null,
+      "Cuanto mayor sea el volumen de compra del equipo mayores los beneficios que obtendr\xE1n"
+    ),
+    _react2.default.createElement(
+      "p",
+      null,
+      _react2.default.createElement(
+        "a",
+        { className: "btn btn-primary btn-lg", href: "#", role: "button" },
+        "Armar mi circulo de confianza"
+      )
+    )
   );
 };
 

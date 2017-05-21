@@ -1,8 +1,9 @@
 import React from 'react'
-import {  BrowserRouter as Router, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 import BuyContainer from './buyContainer'
 import HomeContainer from './homeContainer'
 import PerfilContainer from './perfilContainer'
+import TeamContainer from './teamContainer'
 import MenuContainer from './menuContainer'
 
 class MainContainer extends React.Component {
@@ -30,6 +31,8 @@ class MainContainer extends React.Component {
           <Route exact path="/" component={HomeContainer} />
           <Route path="/compras" component={BuyContainer} />
           <Route path="/perfil" component={PerfilContainer} />
+          <Route path="/team" component={TeamContainer} />
+
         </div>
       </Router>
     )
